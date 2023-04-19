@@ -10,7 +10,7 @@ class AppBarAll extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.black,
       actions: const [ThemeButton()],
-      title: const Text('Atividades'),
+      title: const Text('Sobre o Dev'),
     );
   }
 }

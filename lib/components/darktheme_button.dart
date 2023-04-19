@@ -13,7 +13,7 @@ class ThemeButton extends StatelessWidget {
       onPressed: () {
         appState?.switchTheme();
       },
-      icon: const FaIcon(FontAwesomeIcons.moon),
+      icon: const FaIcon(FontAwesomeIcons.solidMoon),
     );
   }
 }
