@@ -122,7 +122,7 @@ class MainPage extends StatelessWidget {
                     const CircleAvatar(
                       child: FaIcon(
                         color: Colors.black,
-                        FontAwesomeIcons.personRunning,
+                        FontAwesomeIcons.fan,
                       ),
                     ),
                     const Padding(
@@ -213,7 +213,7 @@ class MainPage extends StatelessWidget {
                     const CircleAvatar(
                       child: FaIcon(
                         color: Colors.black,
-                        FontAwesomeIcons.personRunning,
+                        FontAwesomeIcons.glasses,
                       ),
                     ),
                     const Padding(
