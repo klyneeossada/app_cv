@@ -20,11 +20,11 @@ class _ProfilePageState extends State<ProfilePage> {
           Container(
             height: 300,
             width: 400,
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(
                 Radius.circular(30.0),
               ),
-              color: Color.fromRGBO(23, 32, 38, 1),
+              color: Theme.of(context).primaryColor,
             ),
             child: Column(
               children: <Widget>[
@@ -34,17 +34,16 @@ class _ProfilePageState extends State<ProfilePage> {
                   radius: 60,
                 ),
                 const SizedBox(height: 10),
-                const Text(
+                Text(
                   'Klynee Ken Ossada',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
                 const SizedBox(
                   height: 10,
                 ),
-                const Text(
+                Text(
                   'Duis rhoncus dui venenatis consequat porttitor. Etiam\n aliquet congue consequat. In posuere, nunc sit amet\n laoreet blandit, urna sapien.',
-                  style: TextStyle(
-                      fontSize: 12, color: Color.fromRGBO(81, 86, 90, 1)),
+                  style: Theme.of(context).textTheme.displaySmall,
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
@@ -144,11 +143,11 @@ class _ProfilePageState extends State<ProfilePage> {
           Container(
             height: 100,
             width: 400,
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(
+            decoration: BoxDecoration(
+              borderRadius: const BorderRadius.all(
                 Radius.circular(30.0),
               ),
-              color: Color.fromRGBO(23, 32, 38, 1),
+              color: Theme.of(context).primaryColor,
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),

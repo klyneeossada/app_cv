@@ -1,10 +1,10 @@
-import 'package:app_cv/pages/main_page.dart';
-import 'package:app_cv/pages/profile_page.dart';
-import 'package:app_cv/pages/repositores_page.dart';
+import 'package:app_cv/main/main_page.dart';
+import 'package:app_cv/profile/profile_page.dart';
+import 'package:app_cv/repositores/repositores_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../components/app_bar.dart';
+import '../components/appbar_components.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(50),
         child: AppBarAll(),
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
       body: _body[index],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
-        backgroundColor: Colors.black,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
         items: [

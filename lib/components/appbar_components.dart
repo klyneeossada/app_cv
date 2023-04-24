@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'darktheme_button.dart';
+import 'darktheme_button_components.dart';
 
 class AppBarAll extends StatelessWidget {
   const AppBarAll({super.key});
@@ -8,9 +8,12 @@ class AppBarAll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).primaryColor,
       actions: const [ThemeButton()],
-      title: const Text('Sobre o Dev'),
+      title: Text(
+        'Sobre o Dev',
+        style: Theme.of(context).textTheme.titleLarge,
+      ),
     );
   }
 }

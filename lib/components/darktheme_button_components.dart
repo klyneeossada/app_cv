@@ -14,6 +14,7 @@ class ThemeButton extends StatelessWidget {
         appState?.switchTheme();
       },
       icon: const FaIcon(FontAwesomeIcons.solidMoon),
+      color: Colors.white,
     );
   }
 }
