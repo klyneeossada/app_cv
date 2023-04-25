@@ -36,8 +36,8 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: index,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white,
+        selectedItemColor: Theme.of(context).iconTheme.color,
+        unselectedItemColor: Theme.of(context).iconTheme.color,
         items: [
           BottomNavigationBarItem(
             label: label[0],

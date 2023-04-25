@@ -80,9 +80,9 @@ class ContainerMain extends StatelessWidget {
           ),
           Row(
             children: [
-              const FaIcon(
+              FaIcon(
                 FontAwesomeIcons.github,
-                color: Colors.white,
+                color: Theme.of(context).iconTheme.color,
               ),
               const Padding(
                 padding: EdgeInsets.only(left: 10),
