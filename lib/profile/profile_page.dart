@@ -49,22 +49,22 @@ class _ProfilePageState extends State<ProfilePage> {
                 const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const <Widget>[
+                  children: <Widget>[
                     FaIcon(
                       FontAwesomeIcons.whatsapp,
-                      color: Colors.white,
+                      color: Theme.of(context).iconTheme.color,
                     ),
                     FaIcon(
                       FontAwesomeIcons.githubAlt,
-                      color: Colors.white,
+                      color: Theme.of(context).iconTheme.color,
                     ),
                     FaIcon(
                       FontAwesomeIcons.instagram,
-                      color: Colors.white,
+                      color: Theme.of(context).iconTheme.color,
                     ),
                     FaIcon(
                       FontAwesomeIcons.facebook,
-                      color: Colors.white,
+                      color: Theme.of(context).iconTheme.color,
                     ),
                   ],
                 ),

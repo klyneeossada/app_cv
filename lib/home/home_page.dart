@@ -41,23 +41,21 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             label: label[0],
-            icon: const FaIcon(
-              FontAwesomeIcons.bullseye,
-              color: Colors.white,
-            ),
+            icon: FaIcon(FontAwesomeIcons.bullseye,
+                color: Theme.of(context).iconTheme.color),
           ),
           BottomNavigationBarItem(
             label: label[1],
-            icon: const FaIcon(
+            icon: FaIcon(
               FontAwesomeIcons.github,
-              color: Colors.white,
+              color: Theme.of(context).iconTheme.color,
             ),
           ),
           BottomNavigationBarItem(
             label: label[2],
-            icon: const Icon(
+            icon: Icon(
               Icons.person,
-              color: Colors.white,
+              color: Theme.of(context).iconTheme.color,
             ),
           ),
         ],

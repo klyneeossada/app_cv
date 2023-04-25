@@ -4,10 +4,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../components/more_button_components.dart';
 
 class ContainerMain extends StatelessWidget {
-  const ContainerMain(
-      {super.key, required this.midText, required this.titleText});
+  const ContainerMain({
+    super.key,
+    required this.midText,
+    required this.titleText,
+    required this.icon,
+  });
   final String midText;
   final String titleText;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +36,10 @@ class ContainerMain extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 child: FaIcon(
                   color: Colors.black,
-                  FontAwesomeIcons.personRunning,
+                  icon,
                 ),
               ),
               const Padding(
@@ -45,7 +50,7 @@ class ContainerMain extends StatelessWidget {
                 titleText,
                 textAlign: TextAlign.left,
               ),
-              SizedBox(width: size.width * 0.2),
+              const Spacer(),
               const Text(
                 'Exercicios:',
                 style: TextStyle(
@@ -84,7 +89,7 @@ class ContainerMain extends StatelessWidget {
               ),
               Text('Acessar código fonte',
                   style: Theme.of(context).textTheme.displaySmall),
-              SizedBox(width: size.width * 0.3),
+              const Spacer(),
               const MoreButton(),
             ],
           )
